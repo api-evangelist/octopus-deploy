@@ -1,0 +1,79 @@
+aid: octopus-deploy
+name: Octopus Deploy
+description: >-
+  Octopus Deploy is a continuous delivery and release orchestration platform
+  for managing deployments across development, test, and production
+  environments to virtual machines, containers, Kubernetes, and cloud
+  services. The platform handles environments, tenants, runbooks, release
+  promotion, and approvals for both regulated and high-velocity teams. The
+  Octopus REST API provides programmatic access to projects, environments,
+  releases, deployments, runbooks, variables, accounts, and tasks via
+  API-key authentication.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - DevOps
+  - Continuous Delivery
+  - Deployment Automation
+  - Release Management
+  - Runbooks
+  - CI/CD
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/octopus-deploy/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: octopus-deploy:rest-api
+    name: Octopus Deploy REST API
+    description: >-
+      REST API exposing projects, environments, releases, deployments,
+      runbooks, accounts, certificates, tenants, variables, packages, and
+      tasks managed by an Octopus Deploy server or Octopus Cloud instance.
+      Authentication uses an API key passed via the X-Octopus-ApiKey header.
+    humanURL: https://octopus.com/docs/octopus-rest-api
+    baseURL: https://your-octopus.example/api
+    tags:
+      - Deployments
+      - Releases
+      - Projects
+      - Environments
+      - Runbooks
+      - Variables
+      - API Key
+    properties:
+      - type: Documentation
+        url: https://octopus.com/docs/octopus-rest-api
+      - type: Getting Started
+        url: https://octopus.com/docs/octopus-rest-api/getting-started-with-the-octopus-rest-api
+      - type: API Key
+        url: https://octopus.com/docs/octopus-rest-api/how-to-create-an-api-key
+      - type: API Reference
+        url: https://octopus.com/docs/octopus-rest-api
+
+common:
+  - type: Website
+    url: https://octopus.com
+  - type: Documentation
+    url: https://octopus.com/docs
+  - type: API Documentation
+    url: https://octopus.com/docs/octopus-rest-api
+  - type: Pricing
+    url: https://octopus.com/pricing
+  - type: Sign Up
+    url: https://octopus.com/start
+  - type: Login
+    url: https://octopus.com/login
+  - type: Support
+    url: https://octopus.com/support
+  - type: Blog
+    url: https://octopus.com/blog
+  - type: GitHub Organization
+    url: https://github.com/OctopusDeploy
+  - type: CLI
+    url: https://github.com/OctopusDeploy/cli
+  - type: SDK
+    url: https://github.com/OctopusDeploy/OctopusClients
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
