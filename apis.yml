@@ -79,6 +79,8 @@ common:
   - name: MCP Server
     url: https://github.com/OctopusDeploy/mcp-server
     type: MCPServer
+  - type: LLMsTxt
+    url: https://octopus.com/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
