@@ -1,0 +1,132 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Octopus Deploy REST API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Octopus-ApiKey",
+      "value": "{{X-Octopus-ApiKey}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Root",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve the API root resource",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://your-octopus-instance/api/"
+          },
+          "docs": "Returns the hypermedia document containing links to top-level resources."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Projects",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List projects in the default space",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://your-octopus-instance/api/Spaces-1/projects"
+          },
+          "docs": "List projects in the default space"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Environments",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List environments in the default space",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://your-octopus-instance/api/Spaces-1/environments"
+          },
+          "docs": "List environments in the default space"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Machines",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List deployment targets in the default space",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://your-octopus-instance/api/Spaces-1/machines"
+          },
+          "docs": "List deployment targets in the default space"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Accounts",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List accounts in the default space",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://your-octopus-instance/api/Spaces-1/accounts"
+          },
+          "docs": "List accounts in the default space"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Feeds",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List package feeds",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://your-octopus-instance/api/feeds"
+          },
+          "docs": "List package feeds"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
