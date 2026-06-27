@@ -2,11 +2,18 @@
   "repo": "octopus-deploy",
   "feeds": [
     {
-      "source": "https://octopus.com/blog",
+      "source": "https://octopus.com/blog/feed.xml",
       "feed_url": "https://octopus.com/blog/feed.xml",
       "title": "",
-      "saved": 2,
-      "method": "discovered"
+      "saved": 3,
+      "method": "feed"
+    },
+    {
+      "source": "http://feeds.feedburner.com/OctopusDeploy",
+      "feed_url": "http://feeds.feedburner.com/OctopusDeploy",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
     },
     {
       "source": "https://octopus.com/support",
@@ -16,6 +23,6 @@
       "method": "discovered"
     }
   ],
-  "post_count": 3,
-  "fetched": "2026-06-14T20:42:17Z"
+  "post_count": 7,
+  "fetched": "2026-06-27T12:03:07Z"
 }

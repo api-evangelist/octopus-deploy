@@ -62,7 +62,7 @@ common:
     url: https://octopus.com/docs/octopus-rest-api
   - type: Pricing
     url: https://octopus.com/pricing
-  - type: SignUp
+  - type: Signup
     url: https://octopus.com/start
   - type: Login
     url: https://octopus.com/login
@@ -74,12 +74,12 @@ common:
     url: https://github.com/OctopusDeploy
   - type: CLI
     url: https://github.com/OctopusDeploy/cli
-  - type: SDK
+  - type: SDKs
     url: https://github.com/OctopusDeploy/OctopusClients
   - name: MCP Server
     url: https://github.com/OctopusDeploy/mcp-server
     type: MCPServer
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://octopus.com/llms.txt
 maintainers:
   - FN: Kin Lane
