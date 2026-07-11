@@ -52,6 +52,8 @@ apis:
         url: https://octopus.com/docs/octopus-rest-api
 
 common:
+  - type: OAuthScopes
+    url: scopes/octopus-deploy-scopes.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/octopus-deploy
   - type: Website
