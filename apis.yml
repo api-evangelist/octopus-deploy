@@ -52,6 +52,8 @@ apis:
         url: https://octopus.com/docs/octopus-rest-api
 
 common:
+  - type: AgenticAccess
+    url: agentic-access/octopus-deploy-agentic-access.yml
   - type: TrustCenter
     url: security/octopus-deploy-trust-center.yml
   - type: VulnerabilityDisclosure
