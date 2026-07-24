@@ -1,0 +1,63 @@
+openapi: 3.1.0
+info:
+  title: Octopus Deploy REST Accounts Environments API
+  description: 'The Octopus Deploy REST API exposes 100% of the operations available
+
+    in the Octopus UI for managing projects, environments, deployment
+
+    targets, releases, runbooks, and more. Responses are hypermedia
+
+    driven, so clients can navigate from the `/api` root. Endpoint
+
+    scaffold derived from https://octopus.com/docs/octopus-rest-api and
+
+    its getting-started guide.
+
+    '
+  version: '1.0'
+  contact:
+    name: Octopus Deploy Documentation
+    url: https://octopus.com/docs/octopus-rest-api
+servers:
+- url: https://your-octopus-instance/api
+  description: Self-hosted or Cloud Octopus instance
+security:
+- ApiKeyAuth: []
+- OidcAuth: []
+tags:
+- name: Environments
+paths:
+  /Spaces-1/environments:
+    get:
+      tags:
+      - Environments
+      summary: List environments in the default space
+      responses:
+        '200':
+          description: A paged list of environments.
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-Octopus-ApiKey
+      description: 'Preferred authentication mechanism. Generate an API key from
+
+        your Octopus user profile. The key may also be supplied as the
+
+        `apikey` query parameter for simple cases.
+
+        '
+    OidcAuth:
+      type: oauth2
+      description: 'Authenticate by exchanging an OpenID Connect identity token from
+
+        a trusted external system (for example GitHub Actions) for a
+
+        short-lived Octopus access token.
+
+        '
+      flows:
+        clientCredentials:
+          tokenUrl: https://your-octopus-instance/api/oidc/token
+          scopes: {}
