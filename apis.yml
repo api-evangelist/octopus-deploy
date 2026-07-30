@@ -10,7 +10,19 @@ description: >-
   releases, deployments, runbooks, variables, accounts, and tasks via
   API-key authentication.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/octopus-deploy.png
 tags:
   - DevOps
   - Continuous Delivery
@@ -24,33 +36,91 @@ created: '2026-05-11'
 modified: '2026-05-19'
 specificationVersion: '0.19'
 apis:
-  - aid: octopus-deploy:rest-api
-    name: Octopus Deploy REST API
-    description: >-
-      REST API exposing projects, environments, releases, deployments,
-      runbooks, accounts, certificates, tenants, variables, packages, and
-      tasks managed by an Octopus Deploy server or Octopus Cloud instance.
-      Authentication uses an API key passed via the X-Octopus-ApiKey header.
-    humanURL: https://octopus.com/docs/octopus-rest-api
-    baseURL: https://your-octopus.example/api
-    tags:
-      - Deployments
-      - Releases
-      - Projects
-      - Environments
-      - Runbooks
-      - Variables
-      - API Key
-    properties:
-      - type: Documentation
-        url: https://octopus.com/docs/octopus-rest-api
-      - type: GettingStarted
-        url: https://octopus.com/docs/octopus-rest-api/getting-started-with-the-octopus-rest-api
-      - type: API Key
-        url: https://octopus.com/docs/octopus-rest-api/how-to-create-an-api-key
-      - type: APIReference
-        url: https://octopus.com/docs/octopus-rest-api
-
+- aid: octopus-deploy:rest-api
+  name: Octopus Deploy REST API
+  description: >-
+    REST API exposing projects, environments, releases, deployments, runbooks, accounts, certificates,
+    tenants, variables, packages, and tasks managed by an Octopus Deploy server or Octopus Cloud instance.
+    Authentication uses an API key passed via the X-Octopus-ApiKey header.
+  humanURL: https://octopus.com/docs/octopus-rest-api
+  baseURL: https://your-octopus.example/api
+  tags:
+  - Deployments
+  - Releases
+  - Projects
+  - Environments
+  - Runbooks
+  - Variables
+  - API Key
+  properties:
+  - type: Documentation
+    url: https://octopus.com/docs/octopus-rest-api
+  - type: GettingStarted
+    url: https://octopus.com/docs/octopus-rest-api/getting-started-with-the-octopus-rest-api
+  - type: API Key
+    url: https://octopus.com/docs/octopus-rest-api/how-to-create-an-api-key
+  - type: APIReference
+    url: https://octopus.com/docs/octopus-rest-api
+- aid: octopus-deploy:octopus-deploy-accounts-api
+  name: Octopus Deploy Accounts API
+  description: The Accounts API from Octopus Deploy — 1 operation(s) for accounts.
+  humanURL: https://octopus.com/docs/octopus-rest-api
+  baseURL: https://your-octopus.example/api
+  tags:
+  - Accounts
+  properties:
+  - type: OpenAPI
+    url: openapi/octopus-deploy-accounts-api-openapi.yml
+- aid: octopus-deploy:octopus-deploy-environments-api
+  name: Octopus Deploy Environments API
+  description: The Environments API from Octopus Deploy — 1 operation(s) for environments.
+  humanURL: https://octopus.com/docs/octopus-rest-api
+  baseURL: https://your-octopus.example/api
+  tags:
+  - Environments
+  properties:
+  - type: OpenAPI
+    url: openapi/octopus-deploy-environments-api-openapi.yml
+- aid: octopus-deploy:octopus-deploy-feeds-api
+  name: Octopus Deploy Feeds API
+  description: The Feeds API from Octopus Deploy — 1 operation(s) for feeds.
+  humanURL: https://octopus.com/docs/octopus-rest-api
+  baseURL: https://your-octopus.example/api
+  tags:
+  - Feeds
+  properties:
+  - type: OpenAPI
+    url: openapi/octopus-deploy-feeds-api-openapi.yml
+- aid: octopus-deploy:octopus-deploy-machines-api
+  name: Octopus Deploy Machines API
+  description: The Machines API from Octopus Deploy — 1 operation(s) for machines.
+  humanURL: https://octopus.com/docs/octopus-rest-api
+  baseURL: https://your-octopus.example/api
+  tags:
+  - Machines
+  properties:
+  - type: OpenAPI
+    url: openapi/octopus-deploy-machines-api-openapi.yml
+- aid: octopus-deploy:octopus-deploy-projects-api
+  name: Octopus Deploy Projects API
+  description: The Projects API from Octopus Deploy — 1 operation(s) for projects.
+  humanURL: https://octopus.com/docs/octopus-rest-api
+  baseURL: https://your-octopus.example/api
+  tags:
+  - Projects
+  properties:
+  - type: OpenAPI
+    url: openapi/octopus-deploy-projects-api-openapi.yml
+- aid: octopus-deploy:octopus-deploy-root-api
+  name: Octopus Deploy Root API
+  description: The Root API from Octopus Deploy — 1 operation(s) for root.
+  humanURL: https://octopus.com/docs/octopus-rest-api
+  baseURL: https://your-octopus.example/api
+  tags:
+  - Root
+  properties:
+  - type: OpenAPI
+    url: openapi/octopus-deploy-root-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/octopus-deploy-agentic-access.yml
