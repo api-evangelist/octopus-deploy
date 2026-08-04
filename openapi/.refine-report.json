@@ -1,0 +1,24 @@
+{
+  "provider": "octopus-deploy",
+  "sources": [
+    "octopus-deploy-accounts-api-openapi.yml",
+    "octopus-deploy-environments-api-openapi.yml",
+    "octopus-deploy-feeds-api-openapi.yml",
+    "octopus-deploy-machines-api-openapi.yml",
+    "octopus-deploy-projects-api-openapi.yml",
+    "octopus-deploy-root-api-openapi.yml"
+  ],
+  "outputs": [
+    "octopus-deploy-accounts-api-openapi.yml",
+    "octopus-deploy-environments-api-openapi.yml",
+    "octopus-deploy-feeds-api-openapi.yml",
+    "octopus-deploy-machines-api-openapi.yml",
+    "octopus-deploy-projects-api-openapi.yml",
+    "octopus-deploy-root-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
