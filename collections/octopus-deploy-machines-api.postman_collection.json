@@ -1,0 +1,116 @@
+{
+  "item": [
+    {
+      "id": "06921ed6-dc5f-487c-a988-aee737996351",
+      "name": "Machines",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "546f5135-b3bf-4f3b-8b27-3d287fd22e55",
+          "name": "List deployment targets in the default space",
+          "request": {
+            "name": "List deployment targets in the default space",
+            "description": {},
+            "url": {
+              "path": [
+                "Spaces-1",
+                "machines"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "32e0d1c8-8610-4d4b-ab4b-445aa5a8b0d4",
+              "name": "A paged list of machines (deployment targets).",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "Spaces-1",
+                    "machines"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Octopus-ApiKey",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://your-octopus-instance/api",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-Octopus-ApiKey"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "f670972f-909f-49eb-8028-1ae5f6e94904",
+    "name": "Octopus Deploy REST Accounts Machines API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Octopus Deploy REST API exposes 100% of the operations available\nin the Octopus UI for managing projects, environments, deployment\ntargets, releases, runbooks, and more. Responses are hypermedia\ndriven, so clients can navigate from the `/api` root. Endpoint\nscaffold derived from https://octopus.com/docs/octopus-rest-api and\nits getting-started guide.\n\n\nContact Support:\n Name: Octopus Deploy Documentation",
+      "type": "text/plain"
+    }
+  }
+}
