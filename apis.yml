@@ -61,7 +61,7 @@ apis:
   - Deployment
   - Releases
   - Project
-  - Environments
+  - Environment
   - Runbooks
   - Variables
   - APIKeys
@@ -100,6 +100,8 @@ apis:
   humanURL: https://octopus.com/docs/octopus-rest-api
   baseURL: https://your-octopus.example/api
   tags:
+  - Environment
+  tags_raw:
   - Environments
   properties:
   - type: OpenAPI
@@ -110,6 +112,8 @@ apis:
   humanURL: https://octopus.com/docs/octopus-rest-api
   baseURL: https://your-octopus.example/api
   tags:
+  - Feed
+  tags_raw:
   - Feeds
   properties:
   - type: OpenAPI
