@@ -1,12 +1,7 @@
 {
   "provider": "octopus-deploy",
   "sources": [
-    "octopus-deploy-accounts-api-openapi.yml",
-    "octopus-deploy-environments-api-openapi.yml",
-    "octopus-deploy-feeds-api-openapi.yml",
-    "octopus-deploy-machines-api-openapi.yml",
-    "octopus-deploy-projects-api-openapi.yml",
-    "octopus-deploy-root-api-openapi.yml"
+    "_original/octopus-deploy-openapi.yml"
   ],
   "outputs": [
     "octopus-deploy-accounts-api-openapi.yml",
@@ -19,6 +14,17 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "octopus-deploy-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "octopus-deploy-accounts-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "octopus-deploy-environments-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "octopus-deploy-feeds-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "octopus-deploy-machines-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "octopus-deploy-projects-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "octopus-deploy-root-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

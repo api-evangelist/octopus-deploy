@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Octopus Deploy REST Accounts Projects API
+  title: Octopus Deploy REST Projects API
   description: 'The Octopus Deploy REST API exposes 100% of the operations available
 
     in the Octopus UI for managing projects, environments, deployment
@@ -11,9 +11,7 @@ info:
 
     scaffold derived from https://octopus.com/docs/octopus-rest-api and
 
-    its getting-started guide.
-
-    '
+    its getting-started guide.'
   version: '1.0'
   contact:
     name: Octopus Deploy Documentation
@@ -35,6 +33,8 @@ paths:
       responses:
         '200':
           description: A paged list of projects.
+      operationId: getSpaces1Projects
+      x-operation-id-source: derived
 components:
   securitySchemes:
     ApiKeyAuth:
