@@ -1,0 +1,22 @@
+generated: '2026-10-04'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://octopus.com/docs/administration/managing-infrastructure/rate-limiting.md
+sources:
+- https://octopus.com/docs/administration/managing-infrastructure/rate-limiting.md
+- https://octopus.com/docs/api/rate-limiting.md
+name: Octopus Deploy rate limits
+limits:
+- name: Authenticated requests
+  limit_text: 200 requests per minute
+  max: 200
+  window: minute
+  burst: 200 requests (burst limit) not expressed in limit_text but configured separately; omitted here per rules
+- name: Rate limit response
+  limit_text: HTTP 429 Too Many Requests
+headers:
+- Octopus-RateLimit-Policy
+- Octopus-RateLimit
+- Retry-After
+exhaustion_status: 429
+docs: https://octopus.com/docs/administration/managing-infrastructure/rate-limiting.md

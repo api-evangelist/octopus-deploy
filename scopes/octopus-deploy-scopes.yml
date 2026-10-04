@@ -17,4 +17,6 @@ schemes:
     Authenticate by exchanging an OpenID Connect identity token from
     a trusted external system (for example GitHub Actions) for a
     short-lived Octopus access token.
-scopes: []
+scopes:
+  - name: none
+    description: Octopus Deploy does not define OAuth scopes; access is controlled via service account permissions.

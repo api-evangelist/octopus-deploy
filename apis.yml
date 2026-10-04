@@ -1,5 +1,7 @@
 aid: octopus-deploy
+
 name: Octopus Deploy
+
 description: >-
   Octopus Deploy is a continuous delivery and release orchestration platform
   for managing deployments across development, test, and production
@@ -9,7 +11,9 @@ description: >-
   Octopus REST API provides programmatic access to projects, environments,
   releases, deployments, runbooks, variables, accounts, and tasks via
   API-key authentication.
+
 type: Index
+
 deliveryModel:
   model: saas
   open_source: false
@@ -22,6 +26,7 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+
 accessModel:
   pricing: unknown
   onboarding: self-serve
@@ -34,7 +39,9 @@ accessModel:
   - authentication
   generated: '2026-07-22'
   method: derived
+
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/octopus-deploy.png
+
 tags:
   - DevOps
   - Continuous Delivery
@@ -44,11 +51,110 @@ tags:
   - CI/CD
   - Developer Tools
   - Australia
+
 url: >-
   https://raw.githubusercontent.com/api-evangelist/octopus-deploy/refs/heads/main/apis.yml
+
 created: '2026-05-11'
+
 modified: '2026-05-19'
+
 specificationVersion: '0.23'
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: Documentation pages exist but no OpenAPI or other machine‑readable contract was found.
+  evidence:
+    - url: https://octopus.com/docs/octopus-rest-api
+      status: 200
+  checked: '2026-10-04'
+
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
+
+common:
+  - type: SecurityTxt
+    url: well-known/octopus-deploy-status-security.txt
+  - type: RateLimits
+    url: rate-limits/octopus-deploy-rate-limits.yml
+  - type: Plans
+    url: plans/octopus-deploy-plans-pricing.yml
+  - type: Spectral
+    url: rules/octopus-deploy-rules.yml
+  - type: CLI
+    url: cli/octopus-deploy-cli.yml
+  - type: Compliance
+    url: https://octopus.com/company/trust
+  - type: Conformance
+    url: conformance/octopus-deploy-conformance.yml
+  - type: LLMsTxt
+    url: llms/octopus-deploy-llms.txt
+  - type: SecurityTxt
+    url: well-known/octopus-deploy-security.txt
+  - type: WellKnown
+    url: well-known/octopus-deploy-well-known.yml
+  - type: Hosts
+    url: hosts/octopus-deploy-hosts.yml
+  - type: Packages
+    url: packages/octopus-deploy-packages.yml
+  - type: TermsOfService
+    url: https://octopus.com/lp/confirm/terms-updates-confirmation
+  - type: StatusPage
+    url: https://status.octopus.com/
+  - type: Security
+    url: https://octopus.com/devops/security/
+  - type: PrivacyPolicy
+    url: https://octopus.com/privacy
+  - type: Newsroom
+    url: https://octopus.com/news
+  - type: Leadership
+    url: https://octopus.com/devops/reading-list/leadership/
+  - type: ChangeLog
+    url: https://octopus.com/docs/releases
+  - type: GettingStarted
+    url: https://octopus.com/docs/octopus-ai/claude-agent-step/getting-started
+  - type: AgenticAccess
+    url: agentic-access/octopus-deploy-agentic-access.yml
+  - type: TrustCenter
+    url: security/octopus-deploy-trust-center.yml
+  - type: VulnerabilityDisclosure
+    url: security/octopus-deploy-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/octopus-deploy-domain-security.yml
+  - type: Authentication
+    url: authentication/octopus-deploy-authentication.yml
+  - type: OAuthScopes
+    url: scopes/octopus-deploy-scopes.yml
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/octopus-deploy
+  - type: Website
+    url: https://octopus.com
+  - type: Documentation
+    url: https://octopus.com/docs
+  - type: API Documentation
+    url: https://octopus.com/docs/octopus-rest-api
+  - type: Pricing
+    url: https://octopus.com/pricing
+  - type: Signup
+    url: https://octopus.com/start
+  - type: Support
+    url: https://octopus.com/support
+  - type: Blog
+    url: https://octopus.com/blog
+  - type: GitHubOrganization
+    url: https://github.com/OctopusDeploy
+  - type: CLI
+    url: https://github.com/OctopusDeploy/cli
+  - type: SDKs
+    url: https://github.com/OctopusDeploy/OctopusClients
+  - name: MCP Server
+    url: https://github.com/OctopusDeploy/mcp-server
+    type: MCPServer
+  - type: LlmsText
+    url: https://octopus.com/llms.txt
+
 apis:
 - aid: octopus-deploy:rest-api
   name: Octopus Deploy REST API
@@ -151,48 +257,9 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/octopus-deploy-root-api-openapi.yml
-common:
-  - type: AgenticAccess
-    url: agentic-access/octopus-deploy-agentic-access.yml
-  - type: TrustCenter
-    url: security/octopus-deploy-trust-center.yml
-  - type: VulnerabilityDisclosure
-    url: security/octopus-deploy-vulnerability-disclosure.yml
-  - type: DomainSecurity
-    url: security/octopus-deploy-domain-security.yml
-  - type: Authentication
-    url: authentication/octopus-deploy-authentication.yml
-  - type: OAuthScopes
-    url: scopes/octopus-deploy-scopes.yml
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/octopus-deploy
-  - type: Website
-    url: https://octopus.com
-  - type: Documentation
-    url: https://octopus.com/docs
-  - type: API Documentation
-    url: https://octopus.com/docs/octopus-rest-api
-  - type: Pricing
-    url: https://octopus.com/pricing
-  - type: Signup
-    url: https://octopus.com/start
-  - type: Login
-    url: https://octopus.com/login
-  - type: Support
-    url: https://octopus.com/support
-  - type: Blog
-    url: https://octopus.com/blog
-  - type: GitHubOrganization
-    url: https://github.com/OctopusDeploy
-  - type: CLI
-    url: https://github.com/OctopusDeploy/cli
-  - type: SDKs
-    url: https://github.com/OctopusDeploy/OctopusClients
-  - name: MCP Server
-    url: https://github.com/OctopusDeploy/mcp-server
-    type: MCPServer
-  - type: LlmsText
-    url: https://octopus.com/llms.txt
-maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-10-04'
+  status: enriched
+  artifacts_added: 14
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

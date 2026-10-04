@@ -1,0 +1,32 @@
+generated: '2026-10-04'
+method: searched
+source: https://octopus.com/legal/privacy
+signals:
+  data_subject_request:
+    - source: https://octopus.com/legal/privacy
+      http_status: 200
+      fetched: true
+      quote: "You can request to see what personal information we have about you, and ask us to delete it."
+      url: https://octopus.com/legal/privacy
+      note: Allows data subjects to request access and deletion of their personal data.
+  data_retention:
+    - source: https://octopus.com/legal/privacy
+      http_status: 200
+      fetched: true
+      quote: "We retain personal data for as long as necessary to provide our services, fulfill the purposes described in this Privacy Policy, and comply with applicable legal, regulatory, or contractual requirements."
+      url: https://octopus.com/legal/privacy
+      note: Describes retention period as purpose‑limited and compliant with legal requirements.
+  subprocessors:
+    - source: https://octopus.com/legal/privacy
+      http_status: 200
+      fetched: true
+      quote: "A list of our current subprocessors is maintained on our Trust Centre, where you can also subscribe to receive notifications about changes."
+      url: https://octopus.com/legal/privacy
+      note: Provides link to list of subprocessors.
+  incident_notification:
+    - source: https://octopus.com/legal/privacy
+      http_status: 200
+      fetched: true
+      quote: "We use and disclose personal information as we believe necessary: ... to respond to requests from courts, law enforcement agencies, regulatory agencies, and other public and government authorities."
+      url: https://octopus.com/legal/privacy
+      note: Indicates they will notify authorities as required, implying incident handling.

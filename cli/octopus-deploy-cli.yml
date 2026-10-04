@@ -1,0 +1,45 @@
+generated: '2026-10-04'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://octopus.com/ai-tools
+sources:
+- https://octopus.com/ai-tools
+- https://octopus.com/docs/octopus-ai/claude-agent-step/tools.md
+- https://octopus.com/docs/cli/octopus.md
+- https://octopus.com/docs/cli/octopus-cli/install-global-tool.md
+install:
+- method: global
+  command: dotnet tool install Octopus.DotNet.Cli --global --version 4.39.1
+- method: global-latest
+  command: dotnet tool install Octopus.DotNet.Cli --global
+- method: specific-location
+  command: dotnet tool install Octopus.DotNet.Cli --tool-path /path/for/tool --version <version>
+- method: update
+  command: dotnet tool update Octopus.DotNet.Cli --global
+- method: uninstall
+  command: dotnet tool uninstall Octopus.DotNet.Cli --global
+commands:
+- group: account
+- group: api
+- group: build-information
+- group: channel
+- group: config
+- group: deployment-target
+- group: environment
+- group: ephemeral-environment
+- group: help
+- group: login
+- group: logout
+- group: package
+- group: project
+- group: project-group
+- group: release
+- group: runbook
+- group: space
+- group: task
+- group: tenant
+- group: user
+- group: worker
+- group: worker-pool
+binary: dotnet-octo
+docs: https://octopus.com/ai-tools
