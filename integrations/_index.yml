@@ -15,3 +15,51 @@
   relationship: distribution-channel
   status: not-a-workflow
   arazzo: null
+- slug: octopus-deploy-github-marketplace-apps
+  label: GitHub Marketplace (apps)
+  partner: github
+  partner_name: GitHub Marketplace (apps)
+  type: marketplace
+  marketplace: github-apps
+  channel: partner-built
+  evidence: https://github.com/marketplace/octopus-deploy
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: octopus-deploy-github-marketplace-actions
+  label: GitHub Marketplace (actions)
+  partner: github-actions
+  partner_name: GitHub Marketplace (actions)
+  type: marketplace
+  marketplace: github-actions
+  channel: partner-built
+  evidence: https://github.com/marketplace/actions/install-octopus-cli
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: octopus-deploy-atlassian-marketplace
+  label: Atlassian Marketplace
+  partner: atlassian
+  partner_name: Atlassian Marketplace
+  type: marketplace
+  marketplace: atlassian
+  channel: partner-built
+  evidence: https://marketplace.atlassian.com/vendors/1214582/octopus-deploy-pty-ltd
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: octopus-deploy-jetbrains-marketplace
+  label: JetBrains Marketplace
+  partner: jetbrains
+  partner_name: JetBrains Marketplace
+  type: marketplace
+  marketplace: jetbrains
+  channel: partner-built
+  evidence: https://plugins.jetbrains.com/vendor/60c2c639-0d82-460f-9509-90c79f0a665c
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null

@@ -2,6 +2,10 @@ generated: '2026-10-13'
 method: searched
 checked:
 - https://azuremarketplace.microsoft.com/
+- https://github.com/marketplace?type=actions
+- https://github.com/marketplace?type=apps
+- https://marketplace.atlassian.com/
+- https://plugins.jetbrains.com/
 marketplace_apps: []
 edges:
 - partner_name: Microsoft Azure Marketplace
@@ -20,3 +24,80 @@ edges:
   seller_name: Octopus Deploy Pty Ltd
   detected_by: sweep-cloud-marketplaces.py
   detected: '2026-10-13'
+- partner_name: GitHub Marketplace (apps)
+  partner: github
+  partner_match: aggregator
+  type: marketplace
+  marketplace: github-apps
+  channel: partner-built
+  relationship: platform-app
+  direction: third-party
+  evidence: https://github.com/marketplace/octopus-deploy
+  listing_count: 2
+  apps:
+  - Octopus Deploy
+  - Octopus Deploy Intelligence Agent
+  publisher_name: Octopus Deploy
+  badges:
+  - Verified creator
+  - Verified domain
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+- partner_name: GitHub Marketplace (actions)
+  partner: github-actions
+  partner_match: aggregator
+  type: marketplace
+  marketplace: github-actions
+  channel: partner-built
+  relationship: platform-app
+  direction: third-party
+  evidence: https://github.com/marketplace/actions/install-octopus-cli
+  listing_count: 13
+  apps:
+  - Install Octopus CLI
+  - Create Release in Octopus Deploy
+  - Push Package to Octopus Deploy
+  - Run Runbook in Octopus Deploy
+  - Push Build Information to Octopus Deploy
+  publisher_name: Octopus Deploy
+  badges:
+  - Verified creator
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+- partner_name: Atlassian Marketplace
+  partner: atlassian
+  partner_match: aggregator
+  type: marketplace
+  marketplace: atlassian
+  channel: partner-built
+  relationship: platform-app
+  direction: third-party
+  evidence: https://marketplace.atlassian.com/vendors/1214582/octopus-deploy-pty-ltd
+  listing_count: 1
+  apps:
+  - Octopus Deploy for Jira
+  publisher_name: Octopus Deploy Pty Ltd
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+- partner_name: JetBrains Marketplace
+  partner: jetbrains
+  partner_match: aggregator
+  type: marketplace
+  marketplace: jetbrains
+  channel: partner-built
+  relationship: platform-app
+  direction: third-party
+  evidence: https://plugins.jetbrains.com/vendor/60c2c639-0d82-460f-9509-90c79f0a665c
+  listing_count: 1
+  apps:
+  - Octopus Deploy integration
+  publisher_name: Octopus Deploy
+  badges:
+  - Verified vendor
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+source:
+- https://github.com/marketplace?type=actions
+- https://github.com/marketplace?type=apps
+- https://marketplace.atlassian.com/
+- https://plugins.jetbrains.com/
