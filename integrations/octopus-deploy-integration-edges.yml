@@ -9,6 +9,8 @@ checked:
 - https://github.com/marketplace?type=apps
 - https://marketplace.atlassian.com/
 - https://plugins.jetbrains.com/
+- docker-hub/integrations/docker-hub-integration-edges.yml
+- vs-code-marketplace/integrations/vs-code-marketplace-integration-edges.yml
 marketplace_apps: []
 edges:
 - partner_name: Microsoft Azure Marketplace
@@ -132,6 +134,59 @@ edges:
     detected: '2026-10-19'
   detected_by: sweep-cloud-native.py
   first_seen: '2026-10-15'
+- partner_name: Docker Hub (docker-verified-publisher)
+  partner: docker-hub
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: docker-verified-publisher
+  evidence: https://hub.docker.com/u/octopusdeploy
+  mirror_of: docker-hub/integrations/docker-hub-integration-edges.yml
+  apps:
+  - octopusdeploy/worker-tools
+  - octopusdeploy/tentacle
+  - octopusdeploy/octopusdeploy
+  - octopusdeploy/octo
+  - octopusdeploy/kubernetes-agent
+  - octopusdeploy/kubernetes-agent-tentacle
+  - octopusdeploy/kubernetes-agent-tools-base
+  - octopusdeploy/mssql-server-2014-express-windows
+  - octopusdeploy/sample-python-webapp
+  - octopusdeploy/skopeo
+  - octopusdeploy/sample-shoppingcartservice
+  - octopusdeploy/keycloak-gatekeeper
+  - octopusdeploy/kubectl
+  - octopusdeploy/ecs-website-service-example
+  - octopusdeploy/ecs-product-service-example
+  listing_count: 1
+  detected: '2026-10-20'
+  detected_by: mirror-platform-listings.py
+  category: Docker Verified Publisher
+  badges:
+  - Docker Verified Publisher
+- partner_name: VS Code Marketplace (vs-code-marketplace)
+  partner: vs-code-marketplace
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: vs-code-marketplace
+  evidence: https://marketplace.visualstudio.com/publishers/octopusdeploy
+  mirror_of: vs-code-marketplace/integrations/vs-code-marketplace-integration-edges.yml
+  apps:
+  - Octopus Deploy
+  listing_count: 1
+  detected: '2026-10-20'
+  detected_by: mirror-platform-listings.py
+  category: IDE / developer extension marketplace listing
+  badges:
+  - Verified publisher
+  - Verified domain
 source:
 - https://github.com/marketplace?type=actions
 - https://github.com/marketplace?type=apps
