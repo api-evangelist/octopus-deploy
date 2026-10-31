@@ -1,4 +1,4 @@
-# Octopus Deploy (octopus-deploy)
+# Octopus Deploy
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,72 +66,153 @@
 
 Octopus Deploy is a continuous delivery and release orchestration platform for managing deployments across development, test, and production environments to virtual machines, containers, Kubernetes, and cloud services. The platform handles environments, tenants, runbooks, release promotion, and approvals for both regulated and high-velocity teams. The Octopus REST API provides programmatic access to projects, environments, releases, deployments, runbooks, variables, accounts, and tasks via API-key authentication.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/octopus-deploy/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/octopus-deploy/refs/heads/main/apis.yml)
+**Areas:** DevOps · Continuous Delivery · Deployment Automation · Release Management · Runbooks · CI/CD · Developer Tools · Australia
 
-## Scope
+## Octopus Deploy on APIs.io
 
-- **Type:** Index
+Everything profiled for Octopus Deploy is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/octopus-deploy/](https://apis.io/providers/octopus-deploy/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (7)
 
-- DevOps
-- Continuous Delivery
-- Deployment Automation
-- Release Management
-- Runbooks
-- CI/CD
+- [Octopus Deploy REST API](https://apis.io/apis/octopus-deploy/rest-api/) — REST API exposing projects, environments, releases, deployments, runbooks, accounts, certificates, tenants, variables, packages, and tasks managed by an…
+- [Octopus Deploy Accounts API](https://apis.io/apis/octopus-deploy/octopus-deploy-accounts-api/) — The Accounts API from Octopus Deploy — 1 operation(s) for accounts.
+- [Octopus Deploy Environments API](https://apis.io/apis/octopus-deploy/octopus-deploy-environments-api/) — The Environments API from Octopus Deploy — 1 operation(s) for environments.
+- [Octopus Deploy Feeds API](https://apis.io/apis/octopus-deploy/octopus-deploy-feeds-api/) — The Feeds API from Octopus Deploy — 1 operation(s) for feeds.
+- [Octopus Deploy Machines API](https://apis.io/apis/octopus-deploy/octopus-deploy-machines-api/) — The Machines API from Octopus Deploy — 1 operation(s) for machines.
+- [Octopus Deploy Projects API](https://apis.io/apis/octopus-deploy/octopus-deploy-projects-api/) — The Projects API from Octopus Deploy — 1 operation(s) for projects.
+- [Octopus Deploy Root API](https://apis.io/apis/octopus-deploy/octopus-deploy-root-api/) — The Root API from Octopus Deploy — 1 operation(s) for root.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-05-11
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### MCP servers (2)
 
-### Octopus Deploy REST API
+Model Context Protocol servers that expose the API to agents.
 
-REST API exposing projects, environments, releases, deployments, runbooks, accounts, certificates, tenants, variables, packages, and tasks managed by an Octopus Deploy server or Octopus Cloud instance. Authentication uses an API key passed via the X-Octopus-ApiKey header.
+- [MCP Server](https://apis.io/servers/octopus-deploy/mcp-server/)
+- [octopus-deploy-mcp.yml](https://apis.io/servers/octopus-deploy/octopus-deploy-mcp-yml/)
 
-- **Human URL:** [https://octopus.com/docs/octopus-rest-api](https://octopus.com/docs/octopus-rest-api)
-- **Base URL:** `https://your-octopus.example/api`
+#### Agentic access (1)
 
-#### Tags
+Which operations an agent can call, which act, and which need a human in the loop.
 
-- Deployments
-- Releases
-- Projects
-- Environments
-- Runbooks
-- Variables
-- API Key
+- [Octopus Deploy Agentic Access](https://apis.io/agentic-access/octopus-deploy/octopus-deploy-agentic-access/)
 
-#### Properties
+#### Collections (7)
 
-- [Documentation](https://octopus.com/docs/octopus-rest-api)
-- [Getting Started](https://octopus.com/docs/octopus-rest-api/getting-started-with-the-octopus-rest-api)
-- [A P I  Key](https://octopus.com/docs/octopus-rest-api/how-to-create-an-api-key)
-- [API Reference](https://octopus.com/docs/octopus-rest-api)
-- [Postman Collection](collections/octopus-deploy.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/octopus-deploy.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Postman and Open Collection request collections.
 
-## Common Properties
+- [Octopus Deploy REST API](https://apis.io/collections/octopus-deploy/open-octopus-deploy/)
+- [Octopus Deploy REST Accounts API](https://apis.io/collections/octopus-deploy/open-octopus-deploy-accounts-api/)
+- [Octopus Deploy REST Accounts Environments API](https://apis.io/collections/octopus-deploy/open-octopus-deploy-environments-api/)
+- [Octopus Deploy REST Accounts Feeds API](https://apis.io/collections/octopus-deploy/open-octopus-deploy-feeds-api/)
+- [Octopus Deploy REST Accounts Machines API](https://apis.io/collections/octopus-deploy/open-octopus-deploy-machines-api/)
+- [Octopus Deploy REST Accounts Projects API](https://apis.io/collections/octopus-deploy/open-octopus-deploy-projects-api/)
+- [Octopus Deploy REST Accounts Root API](https://apis.io/collections/octopus-deploy/open-octopus-deploy-root-api/)
 
-- [LinkedIn](https://www.linkedin.com/company/octopus-deploy)
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Octopus Deploy API Rules](https://apis.io/rules/octopus-deploy/octopus-deploy-rules/)
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Octopus Deploy Authentication](https://apis.io/security/octopus-deploy/octopus-deploy-authentication/)
+- [Octopus Deploy Domain Security](https://apis.io/security/octopus-deploy/octopus-deploy-domain-security/)
+- [Octopus Deploy Trust Center](https://apis.io/security/octopus-deploy/octopus-deploy-trust-center/)
+- [Octopus Deploy Vulnerability Disclosure](https://apis.io/security/octopus-deploy/octopus-deploy-vulnerability-disclosure/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Octopus Deploy Scopes](https://apis.io/scopes/octopus-deploy/octopus-deploy-scopes/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Octopus Deploy Plans Pricing](https://apis.io/plans/octopus-deploy/octopus-deploy-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Octopus Deploy Rate Limits](https://apis.io/rate-limits/octopus-deploy/octopus-deploy-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://octopus.com)
 - [Documentation](https://octopus.com/docs)
-- [A P I  Documentation](https://octopus.com/docs/octopus-rest-api)
+- [Getting started](https://octopus.com/docs/octopus-ai/claude-agent-step/getting-started)
 - [Pricing](https://octopus.com/pricing)
-- [Sign Up](https://octopus.com/start)
-- [Login](https://octopus.com/login)
 - [Support](https://octopus.com/support)
+- [Changelog](https://octopus.com/docs/releases)
 - [Blog](https://octopus.com/blog)
-- [GitHub Organization](https://github.com/OctopusDeploy)
-- [C L I](https://github.com/OctopusDeploy/cli)
-- [SDK](https://github.com/OctopusDeploy/OctopusClients)
-- [M C P Server](https://github.com/OctopusDeploy/mcp-server)
-- [L L Ms Txt](https://octopus.com/llms.txt)
+- [Security](https://octopus.com/devops/security/)
+- [Compliance](https://octopus.com/company/trust)
+- [Terms of service](https://octopus.com/lp/confirm/terms-updates-confirmation)
+- [Privacy policy](https://octopus.com/privacy)
+- [GitHub](https://github.com/OctopusDeploy)
+- [Status](https://status.octopus.com/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 61.8** — strong · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 76.8 |
+| Contract quality | 40.4 |
+| Contract governance | 31.8 |
+| Operational transparency | 65.8 |
+| Developer ergonomics | 50.0 |
+| Access clarity | 85.5 |
+
+**Agent readiness 22.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 45.1** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/octopus-deploy/](https://apis.io/providers/octopus-deploy/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Octopus Deploy: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/octopus-deploy/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
